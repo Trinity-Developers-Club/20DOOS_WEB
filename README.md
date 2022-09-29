@@ -11,7 +11,7 @@
 
 ## Event details :
 
-- 20 Days of Open Source is a **20 Days long** event. It is organize by Trinity Cyber Forum & GFG IPEC Student Chapter.
+- 20 Days of Open Source is a **20 Days long** event. It is organized by Trinity Cyber Forum & GFG IPEC Student Chapter.
 - Every commit & pull request from a registered github profile will be counted as a valid contribution.
 - You have to make at least 1 contribution in 20 days.
 - Try to make good contributions instead of number of contributions.
