@@ -41,25 +41,25 @@ For your PR to count it must be:
 
 ## Rules To Contribute To This Repo
 
-- You can cotribute any website or webapp (Static/Dynamic) in any tecnology.
+- You can contribute any website or webapp (Static/Dynamic) in any tecnology.
 - While adding any content it should be inside its appropiate directory.
-- if there is any problem with any website create an issue!
+- If there is any problem with any website create an issue!
 
 ## How you can contribute to this repo
 
 - This repo is blank at initial stage.
 - You have to **add a folder** of your name.
 - You have to **add your project** in your folder with proper `README.md` in that folder.
-- you can **update existing site** with its better version and with new feature.
+- You can **update existing site** with its better version and with new feature.
 - Participants can even **add any technology** in their site if they want.
-- **solve issues** raised by other people or yourself.
+- **Solve issues** raised by other people or yourself.
 - **Add link** of your site in your `README.md` file.
 ## Steps For Contribution
 
     1. Fork this repo
     2. Star this repo
     3. Add your folder
-    4. commit the code
+    4. Commit the code
     5. Make pull request
 
 ---
