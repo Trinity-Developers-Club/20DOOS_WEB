@@ -17,7 +17,6 @@
 - Try to make good contributions instead of number of contributions.
 - Whoever makes most valid and good contributions will be declared as the winner.
 - Judgement criteria is shared on Discord.
-- On Monday Oct 5,2022 , there will be an introduction session for you all and details related to that will be shared soon.
 
 For your PR to count it must be:
 
