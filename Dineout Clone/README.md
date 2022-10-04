@@ -5,3 +5,12 @@
         Dineout Clone
     </a>
 </h3>
+
+## Description of the Project
+
+    1. DineOut Clone
+    2. Clone with some functionalities
+    3. Made in basic HTML, CSS
+    4. Responsive Webpage
+
+--
