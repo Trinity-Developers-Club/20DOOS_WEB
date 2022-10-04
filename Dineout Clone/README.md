@@ -14,3 +14,6 @@
     4. Responsive Webpage
 
 --
+
+#Screenshot
+![MainPage](https://github.com/karan-17/20DOOS_WEB/blob/1934853686fca02f0b0e40561f115085e17584a9/Dineout%20Clone/assets/Capture.PNG) 
