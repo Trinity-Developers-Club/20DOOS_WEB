@@ -1,0 +1,33 @@
+.Dashboard {
+  height: 100vh;
+  background-color: #232323;
+  color: #fff;
+}
+
+.UsersTrack {
+  margin-top: 100px;
+  border: 1px solid white;
+}
+
+.UserHeader {
+  font-weight: 600;
+  display: flex;
+  color: #000;
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+.Head {
+  flex: 0.2;
+  margin: 10px;
+}
+
+.User {
+  display: flex;
+  justify-content: space-around;
+}
+
+.UserData {
+  flex: 0.2;
+  margin: 10px;
+}
