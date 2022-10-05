@@ -4,6 +4,6 @@
 ##Dashboard
 ![image](https://user-images.githubusercontent.com/83485475/193998414-923088a0-b770-4a1f-9fde-3aa8ca3b456d.png)
 
-
+##Hosted Link:-https://registration-tattvami.netlify.app/dashboard
 
 User Registration with Dashboard for User Track.
