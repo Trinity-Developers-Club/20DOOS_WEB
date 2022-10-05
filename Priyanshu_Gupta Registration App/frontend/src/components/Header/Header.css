@@ -1,0 +1,17 @@
+.Header {
+  color: #fff;
+  background-color: #0b132f;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Link {
+  color: #fff;
+  margin: 0 2rem;
+  padding: 18px 0;
+}
+
+.Link:hover {
+  color: #6ce4ffa3;
+  transition: 90ms ease-in;
+}
