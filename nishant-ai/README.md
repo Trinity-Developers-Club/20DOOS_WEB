@@ -27,3 +27,10 @@ Linkedin: [@NishantSharma](https://www.linkedin.com/in/nishantsh20/)
 - Animations
 - Responsiveness
 - Hamburger Menu
+
+### Project 2: Netflix.com Clone | Landing Page | Responsive | React+Redux
+
+[LiveDemo](https://netflix-clone-nishant.web.app/)
+
+- Animations
+- Responsiveness
