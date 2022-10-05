@@ -1,0 +1,86 @@
+.Register {
+  height: 100vh;
+  background-color: #2e2e2e;
+}
+
+.Heading {
+  margin-top: 7vh;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.RegisterForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.FormInput {
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 20px 15px;
+  width: 30vw;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.DobSelect {
+  color: rgba(0, 0, 0, 0.495);
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.DobInput {
+  padding: 20px 15px;
+  width: 15vw;
+  margin: 5px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Submit {
+  cursor: pointer;
+}
+
+.Status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.SuccessMessage {
+  background-color: rgb(124, 225, 124);
+  color: #000;
+  width: 50vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.FailureMessage {
+  background-color: rgb(101, 0, 0);
+  color: white;
+  width: 50vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
