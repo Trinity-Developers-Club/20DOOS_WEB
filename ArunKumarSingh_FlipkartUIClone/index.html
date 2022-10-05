@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav1">
+                <div class="b1">
+                    <div class="bCont">
+                        <img class="logo" src="flip1.png" alt="">
+                        <a href="" class="explore"><Span style="color: #fff;">Explore </Span><span
+                                style="color: yellow;">Plus <img class="plus" src="Flipkart.jpg" alt=""></span></a>
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="search">
+                        <input class="sInput" type="text" name="" id=""
+                            placeholder="Search for products, brand and more">
+                        <div class="searchBtn">
+                            <i class="fa-solid fa-magnifying-glass glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="b3">
+                    <ul class="navLinks">
+                        <li> My Account 
+                            <label for="" class="mobile-item"><i class="fa-solid fa-chevron-down arrow"></i></label>
+                            <ul class="drop-menu1">
+                                <li class="triangle">
+                                    <img src="./images/tri.png" alt="">
+                                </li>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Super Coin Zone</a></li>
+                                <li><a href="#">Flipkart Plus Zone</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">My Charts</a></li>
+                                <li><a href="#">Coupons</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Notifications</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li>More
+                            <label for="" class="mobile-item"><i class="fa-solid fa-chevron-down arrow"></i></label>
+                            <ul class="drop-menu">
+                                <li class="triangle">
+                                    <img src="./images/tri.png" alt="">
+                                </li>
+                                <li><a href="#">Notification Prefrences</a></li>
+                                <li><a href="#">Sell on Flipkart</a></li>
+                                <li><a href="#">24x7 Customer Support</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">Download App</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa-solid fa-cart-shopping"></i><span> Cart</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main_head">
+            <div class="item_category">
+                <ul class="items">
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/mobiles.png" class="cat_Img"> <span>
+                                Mobiles
+                            </span></li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/fashion.jpg" class="cat_Img"> <span>Fashion</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/laptop.jpg" class="cat_Img"> <span>Electronics</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/home.jpeg" class="cat_Img"> <span>Home</span></li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/travels.jfif" class="cat_Img"> <span>Travel</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/appliances.jpg" class="cat_Img">
+                            <span>Appliances</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/grocery.jpg" class="cat_Img"> <span>Grocery</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/beauty.jpg" class="cat_Img"> <span>Beauty</span></li>
+                    </a>
+                    <a href="">
+                        <li class="item_menu"> <img src="./images/toys.jpg" class="cat_Img"> <span>Toys</span></li>
+                    </a>
+                </ul>
+            </div>
+
+        </section>
+        <section class="slider">
+            <div class="slider1">
+                <button class="slBtns" onclick="backwardImage()"><i class="fa-solid fa-angle-left angle"></i></button>
+                <img id="slideImage" src="./images/sale.jfif" alt="">
+                <button class="slBtns" onclick="forwardImage()"><i class="fa-solid fa-angle-right angle"></i></button>
+            </div>
+        </section>
+
+        <section class="card1">
+            <div class="card1-part1">
+                <div class="card_head">
+                    <div class="card_head1">
+                        <h1>Deals Of the Day </h1> 
+                        <div>
+                        <span><i class="fa-solid fa-stopwatch stop"></i></span>
+                        <span>13 : 13 : 24 Left</span>
+                    </div>
+                    </div>
+                    <div class="card_head2">
+                        <button class="viewBtn">VIEW ALL</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="cards">
+                    <button class="slBtns " id="back" onclick="back()"><i
+                            class="fa-solid fa-angle-left angle"></i></button>
+                    <div class="itemCards" id="slideCards">
+                        <ul class="card_items">
+                            <li class="card_item1"><img class="product" src="./products/breif.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Jockey,Dollar....</p>
+                                    <p>From &#8377;199 + extra 10% off</p>
+                                    <p>Briefs,Shorts,Boxers</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Levie's,Roadster....</p>
+                                    <p>From &#8377;499 + extra 10% off</p>
+                                    <p>Shirts, Trouser, Denims</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/tshirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>J&J, Roadster....</p>
+                                    <p>From &#8377;399 + extra 15% off</p>
+                                    <p>T-shirts, Sweatshirts</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/bags.png" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Provuge, F-gear..</p>
+                                    <p>From &#8377;599 + extra 30% off</p>
+                                    <p>Laptop Bags, Trip bags</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/wall.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Titan, Ajanta....</p>
+                                    <p>From &#8377;499 + extra 5% off</p>
+                                    <p>Wall-clocks, Wrist-watch </p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/gas.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Surya, Sunflame....</p>
+                                    <p>From &#8377;1099 + extra 15% off</p>
+                                    <p>Gas-stoves, Lighters, etc..</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/decor.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Chumbak, Opaque....</p>
+                                    <p>From &#8377;699 + extra 20% off</p>
+                                    <p>Home Decors</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shoos.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Nike, Bata....</p>
+                                    <p>From &#8377;599 + extra 10% off</p>
+                                    <p>Shoes, Slippers, etc.</p>
+                                </span></li>
+                        </ul>
+                    </div>
+                    <button class="slBtns for" id="for" onclick="forward()"><i
+                            class="fa-solid fa-angle-right angle"></i></button>
+
+                </div>
+
+            </div>
+
+            <div class="card1-part2">
+                <img class="refurb" src="./images/refurbished.jpg" alt="">
+
+            </div>
+        </section>
+
+        <section class="card2">
+            <div class="card2-part1">
+                <div class="card_head">
+                    <div class="card_head2">
+                        <h1>Top Selection</h1>
+                    </div>
+                    <div class="card_head2">
+                        <button class="viewBtn">VIEW ALL</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="cards2" id="card2">
+                    <button class="slBtns back" id="back1" onclick="back1()"><i
+                            class="fa-solid fa-angle-left angle"></i></button>
+                    <div class="itemCards2" id="slideCards">
+                        <ul class="card_items">
+                            <li class="card_item1"><img class="product" src="./products/breif.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Jockey,Dollar....</p>
+                                    <p>From &#8377;199 + extra 10% off</p>
+                                    <p>Briefs,Shorts,Boxers</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Levie's,Roadster....</p>
+                                    <p>From &#8377;499 + extra 10% off</p>
+                                    <p>Shirts, Trouser, Denims</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/tshirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>J&J, Roadster....</p>
+                                    <p>From &#8377;399 + extra 15% off</p>
+                                    <p>T-shirts, Sweatshirts</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/bags.png" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Provuge, F-gear..</p>
+                                    <p>From &#8377;599 + extra 30% off</p>
+                                    <p>Laptop Bags, Trip bags</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/wall.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Titan, Ajanta....</p>
+                                    <p>From &#8377;499 + extra 5% off</p>
+                                    <p>Wall-clocks, Wrist-watch </p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/gas.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Surya, Sunflame....</p>
+                                    <p>From &#8377;1099 + extra 15% off</p>
+                                    <p>Gas-stoves, Lighters, etc..</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/decor.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Chumbak, Opaque....</p>
+                                    <p>From &#8377;699 + extra 20% off</p>
+                                    <p>Home Decors</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shoos.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Nike, Bata....</p>
+                                    <p>From &#8377;599 + extra 10% off</p>
+                                    <p>Shoes, Slippers, etc.</p>
+                                </span></li>
+                        </ul>
+                    </div>
+                    <button class="slBtns for" id="for1" onclick="forward1()"><i
+                            class="fa-solid fa-angle-right angle"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card2">
+            <div class="card2-part1">
+                <div class="card_head">
+                    <div class="card_head2">
+                        <h1>Discounts For You</h1>
+                    </div>
+                    <div class="card_head2">
+                        <button class="viewBtn">VIEW ALL</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="cards2" id="card2">
+                    <button class="slBtns back" id="back2" onclick="back2()"><i
+                            class="fa-solid fa-angle-left angle"></i></button>
+                    <div class="itemCards3" id="slideCards">
+                        <ul class="card_items">
+                            <li class="card_item1"><img class="product" src="./products/breif.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Jockey,Dollar....</p>
+                                    <p>From &#8377;199 + extra 10% off</p>
+                                    <p>Briefs,Shorts,Boxers</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Levie's,Roadster....</p>
+                                    <p>From &#8377;499 + extra 10% off</p>
+                                    <p>Shirts, Trouser, Denims</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/tshirt.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>J&J, Roadster....</p>
+                                    <p>From &#8377;399 + extra 15% off</p>
+                                    <p>T-shirts, Sweatshirts</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/bags.png" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Provuge, F-gear..</p>
+                                    <p>From &#8377;599 + extra 30% off</p>
+                                    <p>Laptop Bags, Trip bags</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/wall.jpg" alt=""><span
+                                    class="pDesc">
+                                    <p>Titan, Ajanta....</p>
+                                    <p>From &#8377;499 + extra 5% off</p>
+                                    <p>Wall-clocks, Wrist-watch </p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/gas.jpeg" alt=""><span
+                                    class="pDesc">
+                                    <p>Surya, Sunflame....</p>
+                                    <p>From &#8377;1099 + extra 15% off</p>
+                                    <p>Gas-stoves, Lighters, etc..</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/decor.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Chumbak, Opaque....</p>
+                                    <p>From &#8377;699 + extra 20% off</p>
+                                    <p>Home Decors</p>
+                                </span></li>
+                            <li class="card_item1"><img class="product" src="./products/shoos.jfif" alt=""><span
+                                    class="pDesc">
+                                    <p>Adidas, Nike, Bata....</p>
+                                    <p>From &#8377;599 + extra 10% off</p>
+                                    <p>Shoes, Slippers, etc.</p>
+                                </span></li>
+                        </ul>
+                    </div>
+                    <button class="slBtns for" id="for2" onclick="forward2()"><i
+                            class="fa-solid fa-angle-right angle"></i></button>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="foot1">
+        <div class="f1">
+            <ul class="fmainlinks">
+                <p class="link-head">About</p>
+                <li>Contact us</li>
+                <li>About us</li>
+                <li>Carrers</li>
+                <li>Flipkart stories</li>
+                <li>Press</li>
+                <li>Flipkart wholesale</li>
+                <li>Corporate Information</li>
+            </ul>
+        </div>
+        <div class="f1">
+            <ul class="fmainlinks">
+                <p class="link-head">help</p>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancelation & Returns</li>
+                <li>Flipkart stories</li>
+                <li>FAQ</li>
+                <li>Report Infringement</li>
+            </ul>
+        </div>
+        <div class="f1">
+            <ul class="fmainlinks">
+                <p class="link-head">policy</p>
+                <li>Return Policy</li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>EPR compilance</li>
+            </ul>
+        </div>
+        <div class="f1">
+            <ul class="fmainlinks">
+                <p class="link-head">Social</p>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="line"></div>
+    <div class="foot2">
+        <div class="f2">
+            <ul class="fmainlinks">
+                <p class="link-head">Mail us:</p>
+                <p class="fp">Flipkart Internet Private Limited,
+                    Buildings Alyssa, Begonia &                    
+                    Clove Embassy Tech Village,                    
+                    Outer Ring Road, Devarabeesanahalli Village,                    
+                    Bengaluru, 560103,                    
+                    Karnataka, India</p>
+            </ul>
+            
+        </div>
+        <div class="f2">
+            <ul class="fmainlinks">
+                <p class="link-head">Mail us:</p>
+                <p class="fp">Flipkart Internet Private Limited,
+                    Buildings Alyssa, Begonia &                    
+                    Clove Embassy Tech Village,                    
+                    Outer Ring Road, Devarabeesanahalli Village,                    
+                    Bengaluru, 560103,                    
+                    Karnataka, India                    
+                    CIN : U51109KA2012PTC066107                    
+                    Telephone: 1800 202 9898</p>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+    <hr>
+
+    <div class="foot-links">
+        <ul class="footul">
+            <li><a href="">Sell on FlipKart</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">Help Center </a></li>
+            <li>© 2007-2022 Flipkart.com</li>
+        </ul>
+        <div class="fcards">
+            <img src="./images/cards.png" alt="" width="350px" height="40px">
+        </div>
+    </div>
+       
+
+    </footer>
+
+    <script>
+        var images = ['sale.jfif', 'beauty.jpg', 'toys.jpg', 'home.jpeg'];
+        let imgIndex = 0;
+        var click = 0;
+
+        if (click == 0) {
+            setInterval(() => {
+                forwardImage();
+            }, 4000);
+
+        }
+        function forwardImage() {
+            imgIndex = imgIndex + 1;
+            if (imgIndex > images.length - 1) {
+                imgIndex = 0;
+            }
+            document.getElementById("slideImage").src = "./images/" + images[imgIndex];
+        }
+        function backwardImage() {
+            imgIndex = imgIndex - 1;
+            if (imgIndex < 0) {
+                imgIndex = (images.length - 1)
+            }
+            document.getElementById("slideImage").src = "./images/" + images[imgIndex];
+        }
+
+        function forward() {
+            document.getElementById('slideCards').scrollBy(900, 0);
+            document.getElementById("back").style.visibility = "visible";
+            document.getElementById("for").style.visibility = "hidden";
+        }
+        function back() {
+            document.getElementById('slideCards').scrollBy(-900, 0);
+            document.getElementById("back").style.visibility = "hidden";
+            document.getElementById("for").style.visibility = "visible";
+        }
+
+        function forward1() {
+            document.querySelector(".itemCards2").scrollBy(600, 0);
+            document.querySelector("#back1").style.visibility = "visible";
+            document.querySelector("#for1").style.visibility = "hidden";
+        }
+        function back1() {
+            document.querySelector(".itemCards2").scrollBy(-600, 0);
+            document.querySelector("#back1").style.visibility = "hidden";
+            document.querySelector("#for1").style.visibility = "visible";
+        }
+        function forward2() {
+            document.querySelector(".itemCards3").scrollBy(600, 0);
+            document.querySelector("#back2").style.visibility = "visible";
+            document.querySelector("#for2").style.visibility = "hidden";
+        }
+        function back2() {
+            document.querySelector(".itemCards3").scrollBy(-600, 0);
+            document.querySelector("#back2").style.visibility = "hidden";
+            document.querySelector("#for2").style.visibility = "visible";
+        }
+
+
+        // for scrolling on left and right
+       // clicked() {
+//document.getElementById('content').scrollBy(30, 0); // for right scroll
+//document.getElementById('content').scrollBy(-30, 0); // for left scroll
+//}
+
+    </script>
+
+</body>
+
+</html>
