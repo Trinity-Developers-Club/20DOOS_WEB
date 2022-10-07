@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill splitter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Party Bill splitter</h1>
+        <div class="box">
+            <div class="box1">
+            <input type="text" id="i1" placeholder="Amount to be paid">
+            <input type="text" id="i2" placeholder="Friends invited">
+            <button onclick="billSplit()">Split Bill</button>
+             </div>
+             <div class="box2" id="outputs">
+                 <div><h2 id="out"></h2></div>
+                <div> <h4>I hope you all Enjoyed Your meal</h4></div>
+             </div>
+
+
+        </div>
+    </main>
+
+    <script>
+        
+
+        function billSplit(){
+            var input1 = +document.getElementById("i1").value;
+            var input2 = +document.getElementById("i2").value;
+            var output = document.getElementById("out");
+            var result = document.getElementById("outputs")
+            var res ; 
+
+            res = input1/input2;
+            result.style.display = "block";
+            output.innerHTML=`Bill per head will be ${res}`;
+            
+        }
+    </script>
+    
+</body>
+</html>
