@@ -34,3 +34,10 @@ Linkedin: [@NishantSharma](https://www.linkedin.com/in/nishantsh20/)
 
 - Animations
 - Responsiveness
+
+### Project 3: TravelGo | Landing Page | Travel Website | React
+
+[LiveDemo](https://travgo.netlify.app/)
+
+- Frontend Development
+- React Development
