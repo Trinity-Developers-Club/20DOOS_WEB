@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rent</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" />
+   <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" />
+</head>
+<style>
+   body {
+      background-color: #dfdfdf;
+   }
+
+   /* body :(#unblurred) {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);    
+} */
+
+   body * {
+      box-sizing: border-box;
+
+   }
+
+   .header {
+      background-color: #327a81;
+      color: white;
+      font-size: 1.5em;
+      padding: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   img {
+      border-radius: 6%;
+      height: 60px;
+      width: 60px;
+   }
+
+   .table-users {
+      border: 1px solid #327a81;
+      border-radius: 10px;
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+      max-width: calc(100% - 2em);
+      margin: 1em auto;
+      overflow: hidden;
+      width: 800px;
+   }
+
+   table {
+      width: 100%;
+   }
+
+   table td,
+   table th {
+      color: #1d1d1d;
+      padding: 10px;
+   }
+
+   table td {
+      text-align: center;
+      vertical-align: middle;
+   }
+
+   table td:last-child {
+      font-size: 0.95em;
+      line-height: 1.4;
+      text-align: left;
+   }
+
+   table th {
+      background-color: #daeff1;
+      font-weight: 600;
+   }
+
+   table tr:nth-child(2n) {
+      background-color: white;
+      width: 113%;
+   }
+
+   table tr:nth-child(2n+1) {
+      background-color: #edf7f8;
+      width: 113%;
+   }
+
+   @media screen and (max-width: 700px) {
+
+      table,
+      tr,
+      td {
+         display: block;
+      }
+
+      td:first-child {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 100px;
+      }
+
+      td:not(:first-child) {
+         clear: both;
+         margin-left: 100px;
+         padding: 4px 20px 4px 90px;
+         position: relative;
+         text-align: left;
+      }
+
+      td:not(:first-child):before {
+         color: #91ced4;
+         /* #91ced4 */
+         content: "";
+         display: block;
+         left: 0;
+         position: absolute;
+      }
+
+      td:nth-child(2):before {
+         content: "SOCIETY NAME:";
+      }
+
+      td:nth-child(3):before {
+         content: "LOCALITY:";
+      }
+
+      td:nth-child(4):before {
+         content: "FLAT TYPE:";
+      }
+
+      td:nth-child(5):before {
+         content: "AREA:";
+      }
+      td:nth-child(6):before {
+         content: "RENT PER MONTH:";
+      }
+
+      tr {
+         padding: 10px 0;
+         position: relative;
+      }
+
+      tr:first-child {
+         display: none;
+      }
+   }
+
+   @media screen and (max-width: 500px) {
+      .link-a {
+         font-size: .9rem;
+      }
+
+      .link-a span {
+         font-size: 1.5rem;
+      }
+
+      .header {
+         background-color: #03102cd1;
+         border-radius: 10px;
+         color: #e1d9ca;
+         font-size: 23px;
+         font-weight: 700;
+         padding: 0;
+         text-shadow: 3px 1px 0 rgb(188 195 37 / 20%);
+      }
+
+      img {
+         border: 3px solid;
+         border-color: #daeff1;
+         height: 260px;
+         margin: 0.5rem 0px;
+         width: 260px;
+         /* margin-left: -38%; */
+      }
+
+
+      td:first-child {
+         background-color: #ecf6f9a1;
+         border-bottom: 1px solid #d3d3d3;
+         border-radius: 10px 10px 0 0;
+         position: relative;
+         top: 0;
+         transform: translateY(0);
+         width: 100%;
+      }
+
+      td:not(:first-child) {
+         margin: 0;
+         padding: 5px 1em;
+         width: 100%;
+      }
+
+      td:not(:first-child):before {
+         font-size: 0.8em;
+         padding-top: 0.3em;
+         position: relative;
+      }
+
+      td:last-child {
+         padding-bottom: 1rem !important;
+      }
+
+      tr {
+         background-color: white !important;
+         border: 1px solid #97aeb1;
+         border-radius: 10px;
+         box-shadow: 2px 2px 0 rgb(0 0 0 / 10%);
+         margin: 2.5rem 0;
+         padding: 0;
+      }
+
+      .table-users {
+         border: none;
+         box-shadow: none;
+         overflow: visible;
+      }
+   }
+
+   .e-btn.e-link,
+   .e-css.e-btn.e-link {
+      background-color: #e14949;
+      border-color: black;
+      border-radius: 66%;
+      box-shadow: none;
+      position: fixed;
+      left: 1%;
+      top: 81%;
+      z-index: 200;
+      color: #000000;
+   }
+
+   .link-a {
+      color: #000000;
+      text-decoration: none;
+   }
+
+   .link-a:hover {
+      color: #979797;
+      text-decoration: none;
+   }
+
+   .link-a span {
+      font-size: 18px;
+      vertical-align: middle;
+      margin-left: 5px;
+   }
+   .fa-phone-square:before {
+    content: "\f098";
+    color: #52acb5;
+}
+
+
+.popup {
+  background-color: #242424;
+    width: 448px;
+    padding: 29px 40px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: 'Noto Sans', sans-serif;
+    display: none;
+    text-align: center;
+    z-index: 99;
+    box-shadow:0px 0px 128px 145px #e3e3e3;
+}
+
+.popup button {
+  display: block;
+    margin: 104px 0 145px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+
+</style>
+
+<body>
+   <script async src="https://tally.so/widgets/embed.js"></script>
+
+<script>
+window.TallyConfig = {
+  "formId": "nr8zv3",
+  "popup": {
+    "emoji": {
+      "text": "💬",
+      "animation": "head-shake"
+    },
+    "layout": "modal",
+    "autoClose": 2000
+  }
+};
+</script>
+
+   <!-- <div class="popup">
+     
+      <button>&times;</button>
+      <img src="img/360logonew.png" alt="" class="logo" style=" width: 38%;
+    margin-top: -59%;
+    position: absolute;
+    height: 30%;
+    margin-left: -17%;">
+      <h2 style="margin-top: -23%;
+       margin-left: 0;
+       font-size: 19px;
+       color: white;">Register to avail great offers!</h2>
+      <p>
+      <form action="https://sheetdb.io/api/v1/c7umne4klh82w" method="POST" id="sheetdb-form">
+         <div class="form_pop">
+            <input type="text" name="data[name]" placeholder="Enter your Name*"
+               style="height: 2.3rem;
+               margin: 10px;
+               border: 2px solid #00000030;
+               border-radius: 5px;
+               margin-left: 3%;" required>
+         </div>
+         <div class="form_pop">
+            <input type="text" name="data[contact]" placeholder="Enter your contact number*"
+               style="height: 2.3rem;
+               margin: 10px;
+               border: 2px solid #00000030;
+               border-radius: 5px;
+               margin-left: 3%;" required>
+         </div>
+         <div class="form_pop">
+            <input type="email" name="data[email]" placeholder="Enter your Email Id"
+               style="height: 2.3rem;
+               margin: 10px;
+               border: 2px solid #00000030;
+               border-radius: 5px;
+               margin-left: 3%;">
+         </div>
+         </p>
+         <input type="submit" value="SUBMIT" id="close" class="popbtn" style="border-radius: 11px;
+         background-color: #a58c4c;
+         padding: 3px 13px 4px;
+         color: white;
+         box-shadow: 0px 0px 8px #b36e3c;">
+   </div>
+
+   
+   <script>
+      var form = document.getElementById('sheetdb-form');
+      form.addEventListener("submit", e => {
+         e.preventDefault();
+         fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById("sheetdb-form")),
+         }).then(
+            response => response.json()
+         ).then((html) => {
+            // you can put any JS code here
+            alert('Thank you, We have recieved your response & will reach you soon.')
+         });
+      });
+   
+      window.addEventListener("load", function () {
+               setTimeout(
+                   function open(event) {
+                       document.querySelector(".popup").style.display = "block";
+                   },
+                   1000
+               )
+           });
+           document.querySelector("#close").addEventListener("click", function () {
+               document.querySelector(".popup").style.display = "none";
+           });
+   
+   </script> -->
+   
+
+   <div>
+      <a class="sf-icon-telephone e-btn e-link" href="tel:9324535317">
+         <i style="font-size:40px" class="fa">&#xf095;</i>
+      </a>
+   </div>
+
+   <div class="table-users">
+      <div class="header"> RENT PROPERTIES</div>
+
+      <table cellspacing="0">
+         <tr>
+            <th>PICTURE</th>
+            <th>SOCIETY NAME</th>
+            <th>LOCALITY</th>
+            <th>TYPE</th>
+            <th>AREA</th>
+            <th>RENT (per month)</th>
+            <th>CONTACT</th>
+         </tr>
+
+        
+
+         <tr>
+            <td><img src="img/shahArcade.jfif" alt="" /></td>
+            <td>Shah Arcade</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>2 BHK</td>
+            <td>800 sq.ft</td>
+            <td>20,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/saiSakshaat.jpg" alt="" /></td>
+            <td>Sai Sakshat</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>2 BHK</td>
+            <td>810 sq.ft</td>
+            <td>30,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/bhagwatiGreens.jpeg" alt="" /></td>
+            <td>Bhagwati Greens</td>
+            <td>Kharghar (Sector-20)</td>
+            <td>2 BHK</td>
+            <td>860 sq.ft</td>
+            <td>35,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/regencyCrest.jpg" alt="" /></td>
+            <td>Regency Crest</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>2 BHK</td>
+            <td>900 sq.ft</td>
+            <td>28,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/payalHeights.jfif" alt="" /></td>
+            <td>Payal Heights</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>2 BHK</td>
+            <td>800 sq.ft</td>
+            <td>22,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/kesarSymphony.jpg" alt="" /></td>
+            <td>Kesar Symphony</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>2 BHK</td>
+            <td>910 sq.ft</td>
+            <td>24,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/windsorHeights.jpg" alt="" /></td>
+            <td>Winsor Heights</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>2 BHK</td>
+            <td>850 sq.ft</td>
+            <td>18,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/kesarGarden.jpg" alt="" /></td>
+            <td>Kesar Garden</td>
+            <td>Kharghar (Sector-20)</td>
+            <td>2 BHK</td>
+            <td>900 sq.ft</td>
+            <td>22,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/girirajHor.png" alt="" /></td>
+            <td>Giriraj Horizon</td>
+            <td>Kharghar (Sector-20)</td>
+            <td>2 BHK</td>
+            <td>920 sq.ft</td>
+            <td>20,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/saiMoksh.jfif" alt="" /></td>
+            <td>Sai Moksh</td>
+            <td>Kharghar (Sector-15)</td>
+            <td>2 BHK</td>
+            <td>950 sq.ft</td>
+            <td>25,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/goodwillPar.jpeg" alt="" /></td>
+            <td>Goodwill Paradise</td>
+            <td>Kharghar (Sector-15)</td>
+            <td>2 BHK</td>
+            <td>930 sq.ft</td>
+            <td>25,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+
+         </tr>
+         <tr>
+            <td><img src="img/saiMannat.jpg" alt="" /></td>
+            <td>Sai Mannat</td>
+            <td>Kharghar (Sector-34)</td>
+            <td>2 BHK</td>
+            <td>960 sq.ft</td>
+            <td>30,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+         <tr>
+            <td><img src="img/rosewoods.jpg" alt="" /></td>
+            <td>Tharwani Rosewoods</td>
+            <td>Kharghar (Sector-35)</td>
+            <td>2 BHK</td>
+            <td>900 sq.ft</td>
+            <td>25,000/-</td>
+            <td>
+               <a href="tel:9167821222"><span class="fa fa-phone-square " style="font-size: 35px; width: 20%;"></span></a>
+               <a href="https://wa.me/message/D3AICJ2A4GJEI1"><span class="fa fa-whatsapp" style="font-size: 35px; width: 20%; color: #449b3f;"></span> </a>
+              </td>
+         </tr>
+      </table>
+   </div>
+</body>
+
+</html>
