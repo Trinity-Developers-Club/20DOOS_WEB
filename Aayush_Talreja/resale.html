@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Resale Properties</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" />
+</head>
+<style>
+   body {
+      background-color: #91ced4;
+   }
+
+   body * {
+      box-sizing: border-box;
+   }
+
+   .header {
+      background-color: #327a81;
+      color: white;
+      font-size: 1.5em;
+      padding: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   img {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+   }
+
+   .table-users {
+      border: 1px solid #327a81;
+      border-radius: 10px;
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+      max-width: calc(100% - 2em);
+      margin: 1em auto;
+      overflow: hidden;
+      width: 800px;
+   }
+
+   table {
+      width: 100%;
+   }
+
+   table td,
+   table th {
+      color: #2b686e;
+      padding: 10px;
+   }
+
+   table td {
+      text-align: center;
+      vertical-align: middle;
+   }
+
+   table td:last-child {
+      font-size: 0.95em;
+      line-height: 1.4;
+      text-align: left;
+   }
+
+   table th {
+      background-color: #daeff1;
+      font-weight: 600;
+   }
+
+   table tr:nth-child(2n) {
+      background-color: white;
+   }
+
+   table tr:nth-child(2n+1) {
+      background-color: #edf7f8;
+   }
+
+   @media screen and (max-width: 700px) {
+
+      table,
+      tr,
+      td {
+         display: block;
+      }
+
+      td:first-child {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 100px;
+      }
+
+      td:not(:first-child) {
+         clear: both;
+         margin-left: 100px;
+         padding: 4px 20px 4px 90px;
+         position: relative;
+         text-align: left;
+      }
+
+      td:not(:first-child):before {
+         color: #91ced4;
+         content: "";
+         display: block;
+         left: 0;
+         position: absolute;
+      }
+
+      td:nth-child(2):before {
+         content: "Society Name:";
+      }
+
+      td:nth-child(3):before {
+         content: "Locality:";
+      }
+
+      td:nth-child(4):before {
+         content: "Availability:";
+      }
+
+      td:nth-child(5):before {
+         content: "Type:";
+      }
+
+      tr {
+         padding: 10px 0;
+         position: relative;
+      }
+
+      tr:first-child {
+         display: none;
+      }
+   }
+
+   @media screen and (max-width: 500px) {
+      .header {
+         background-color: transparent;
+         color: #ff2424;
+         font-size: 23px;
+         font-weight: 700;
+         padding: 0;
+         text-shadow: 2px 2px 0 rgb(0 0 0 / 10%);
+      }
+
+      img {
+         border: 3px solid;
+         border-color: #daeff1;
+         height: 100px;
+         margin: 0.5rem 0;
+         width: 100px;
+      }
+
+      td:first-child {
+         background-color: #c8e7ea;
+         border-bottom: 1px solid #91ced4;
+         border-radius: 10px 10px 0 0;
+         position: relative;
+         top: 0;
+         transform: translateY(0);
+         width: 100%;
+      }
+
+      td:not(:first-child) {
+         margin: 0;
+         padding: 5px 1em;
+         width: 100%;
+      }
+
+      td:not(:first-child):before {
+         font-size: 0.8em;
+         padding-top: 0.3em;
+         position: relative;
+      }
+
+      td:last-child {
+         padding-bottom: 1rem !important;
+      }
+
+      tr {
+         background-color: white !important;
+         border: 1px solid #6cbec6;
+         border-radius: 10px;
+         box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+         margin: 0.5rem 0;
+         padding: 0;
+      }
+
+      .table-users {
+         border: none;
+         box-shadow: none;
+         overflow: visible;
+      }
+   }
+   .e-btn.e-link, .e-css.e-btn.e-link {
+        background-color: #0a9572c4;
+    border-color: black;
+    border-radius: 66%;
+    box-shadow: none;
+    position: fixed;
+    left: 1%;
+    top: 81%;
+    z-index: 200;
+    color: #000000;
+}
+</style>
+
+<body>
+   <div>
+      <a class="sf-icon-telephone e-btn e-link" href="tel:9324535317">
+          <i style="font-size:40px" class="fa">&#xf095;</i>
+      </a>
+   </div>
+   <div class="table-users">
+      <div class="header">RESALE PROPERTIES</div>
+
+      <table cellspacing="0">
+         <tr>
+            <th>PICTURE</th>
+            <th>SOCIETY NAME</th>
+            <th>LOCALITY</th>
+            <th>AVAILABILITY</th>
+            <th width="230">TYPE</th>
+         </tr>
+
+         <tr>
+            <td><img src="img/shahHeight.jpeg" alt="" /></td>
+            <td>Shah Height</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>FLAT & SHOP</td>
+            <td>1/2 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/prajapatiLawns.jfif" alt="" /></td>
+            <td>Prajapati Lawns</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>FLAT</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/regencyGarden.jpg" alt="" /></td>
+            <td>Regency Garden</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>FLAT</td>
+            <td>3 BHK</td>
+         </tr>
+
+         <tr>
+            <td><img src="img/saiSakshaat.jpg" alt="" /></td>
+            <td>Sai Sakshat</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>FLAT</td>
+            <td>3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/shahCorner.jpg" alt="" /></td>
+            <td>Shah Corner</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>SHOP</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><img src="img/shahArcade.jfif" alt="" /></td>
+            <td>Shah Arcade</td>
+            <td>Kharghar (Sector-06)</td>
+            <td>FLAT & SHOP</td>
+            <td>2 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/shreekp.jpg" alt="" /></td>
+            <td>Shree Krishna Paradise</td>
+            <td>Kharghar (Sector-12)</td>
+            <td>FLAT</td>
+            <td>3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/ashokaRes.jfif" alt="" /></td>
+            <td>Ashoka Residency</td>
+            <td>Kharghar (Sector-12)</td>
+            <td>FLAT</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/regencyCrest.jpg" alt="" /></td>
+            <td>Regency Crest</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>FLAT</td>
+            <td>3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/bhagwatiGreens.jpeg" alt="" /></td>
+            <td>Bhagwati Greens</td>
+            <td>Kharghar (Sector-20)</td>
+            <td>FLAT</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/deltaCentral.jpg" alt="" /></td>
+            <td>Delta Corner</td>
+            <td>Kharghar (Sector-19)</td>
+            <td>FLAT & SHOP</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/greenwoods.jpg" alt="" /></td>
+            <td>Greenwoods</td>
+            <td>Kharghar (Sector-35)</td>
+            <td>FLAT & SHOP</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/arihantAnaya.jpg" alt="" /></td>
+            <td>Arihant Anaya</td>
+            <td>Kharghar (Sector-35)</td>
+            <td>FLAT & SHOP</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/saiMannat.jpg" alt="" /></td>
+            <td>Sai Mannat</td>
+            <td>Kharghar (Sector-34)</td>
+            <td>FLAT</td>
+            <td>2/3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/tharwaniHeritage.jpg" alt="" /></td>
+            <td>Tharwani Heritage</td>
+            <td>Kharghar (Sector-07)</td>
+            <td>FLAT</td>
+            <td>3 BHK</td>
+         </tr>
+         <tr>
+            <td><img src="img/tricity.jfif" alt="" /></td>
+            <td>Tricity Symphony</td>
+            <td>Kharghar (Sector-34)</td>
+            <td>FLAT</td>
+            <td>2 BHK</td>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>
