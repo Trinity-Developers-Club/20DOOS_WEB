@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+    <h1>Welcome to Resume Builder</h1>
+    <p>Please enter your details to generate cv</p>
+    <div class="container">
+      <form action="{% url 'Generate_resume' %}" method="post">
+      {% csrf_token %}
+      Name: <input type="text" name="name" value="">
+      <br>
+      Email: <input type="text" name="email" value="">
+      <br>
+      Phone: <input type="text" name="phone" value="">
+      <br>
+      <hr>
+      <div class="address">
+      Country: <input type="text" name="country" value="">
+      <br>
+      State: <input type="text" name="state" value="">
+      <br>
+      City: <input type="text" name="city" value="">
+      <br>
+      Address: <textarea name="address" rows="8" cols="80"></textarea>
+      <br>
+      <hr>
+      </div>
+      <div class="education">
+      Last Degree: <input type="text" name="lastdegree" value="">
+      <br>
+      Degree Name: <input type="text" name="degreename" value="">
+      <br>
+      Institute: <input type="text" name="institute" value="">
+      <br>
+      Date of Joining: <input type="date" name="dateofjoining" value="">
+      <br>
+      Date of Ending: <input type="date" name="dateofEnding" value="">
+      <br>
+      </div>
+      <div class="fav_sport">
+      Favorite Sport: <input type="text" name="favsport" value="">
+      <br>
+      Interest: <input type="text" name="interest" value="">
+      <br>
+      </div>
+      <div class="short_bio">
+      Short Bio: <textarea name="shortBio" rows="8" cols="80"></textarea>
+      <br>
+      </div>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </div>
+  </body>
+</html>
