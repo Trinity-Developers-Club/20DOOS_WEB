@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant deals,discounts</title>
+	<style>
+		*
+		{
+			margin: auto;
+		}
+		#container
+		{
+			width: 1300px;
+			background-color: black; 
+			height: 3000px;
+		}
+		header
+		{
+			width: 100%;
+			height: 70px;
+			background-color:#fa5757;
+		}
+		
+		#d1
+		{
+			width: 113px;
+			height: 70px;
+			background-color: purple;
+			float: left;
+			padding-left: 5px;
+			display: inline-block;
+			padding-top: 10px;
+		}
+		#family
+		{
+			font-size: 31px;
+			font-family: monospace;
+			padding-top: 20px;
+			color: white;
+		}
+				
+		#d3
+		{
+
+			width: 60px;
+			height: 70px;
+			background-color: pink;
+			float: left;
+			display: inline-block;
+		}
+		#logo
+		{
+			padding-top: 10px;
+			padding-left: 10px;
+			height: 50px;
+			width: 40px;
+		}
+		#d4
+		{
+			width: 112px;
+			height: 70px;
+			background-color: pink;
+			float: left;
+			display: inline-block;
+		}
+		.dropdown
+		{
+			padding-left: 3px;
+			padding-top:  30px;
+			color: white;
+		}
+		#d5
+		{
+			float: left;
+			display: inline-block;
+			height: 70px;
+			width: 620px;
+			background-color: purple;
+		}
+		.dropbtn 
+		{
+			width: 510px;
+			height: 30px;
+		    background-color: white;
+		    color: black;
+
+		    padding: 16px;
+		    padding-left: 5px;
+		    font-size: 12px;
+		    border: none;
+		    padding-top: 10px;
+		    cursor:pointer;
+		}
+		#search
+		{
+
+			height: 40px;
+			width: 20px;
+			padding-left: 420px;
+			
+		}
+
+	.dropdown
+	{
+
+			position: relative;
+			  display: inline-block;
+	}
+
+	.dropdown-content 
+		{
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 510px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+			
+		}
+
+
+		.dropdown-content a
+		 {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+	.dropdown-content a:hover
+	 {
+	 	background-color: #f1f1f1;
+	 }
+
+	.dropdown:hover .dropdown-content 
+	{
+    display: block;
+	}
+
+	.dropdown:hover .dropbtn 
+	{
+    background-color: white;
+	}
+		
+   
+		#demo
+		{
+			float: left;
+			display: inline-block;
+			height: 70px;
+			width: 390px;
+			background-color: pink;
+		}
+		#lgno
+		{
+			padding-top: 27px;
+			font-family: monospace;
+			font-size: 17px;
+			color: white;
+			padding-left: 170px;
+		}
+		nav
+		{
+			height: 450px;
+			width: 100%;
+			background-color: cyan;
+		}
+		#d7
+		{
+			position: relative;
+			float: left;
+			display: inline-block;
+			height: 450px;
+			width: 1300px;
+
+
+		}
+		#logo2
+		{
+			height: 450px;
+			width:1300px;
+			
+
+		}
+		#text
+		{
+			z-index: 1px;
+			position: absolute;
+			color: white;
+			font-weight: bold;
+			font-family: sans-serif;
+			font-size: 45px;
+			bottom: 270px;
+			padding-left: 345px;
+
+		}
+		#text2
+		{
+			z-index: 1px;
+			position: absolute;
+			color: white;
+			font-weight: 500px;
+			font-family: sans-serif;
+			font-size: 21px;
+			bottom: 245px;
+			padding-left: 383px;
+			top: 190px;
+
+		}
+		#button
+		{
+			height: 30px;
+			width: 130px;
+			font-size: 20px;
+		    font-weight: 500;
+		    letter-spacing: 0.1px;
+		    text-align: center;
+		    color: #ffffff;
+		    border-radius: 2px;
+		    display: inline-block;
+		    padding: 8px 20px;
+			
+			background-color: #fa5757;
+			border-style:solid;
+			border-color:black;
+			border-width:1px;
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+			margin-left:150px;
+			
+			
+		}
+
+
+		
+		section
+		{
+			height: 900px;
+			width: 1300px;
+			background-color:pink;
+
+		}
+		#d8
+		{
+			height: 900px;
+			width: 1300px;
+		}
+		#d81
+		{
+			height: 450px;
+			width:1300px;
+			background-color: purple;
+		}
+		#d82
+		{
+
+			height: 450px;
+			width: 1300px;
+			background-color: orange; 
+		}
+		#family2
+		{
+			font-size: 26px;
+		    color: #696969;
+		    width: 100%;
+		    padding-top: 20px;
+		    padding-left: 40px;
+		    text-align: left;
+		    font-weight: 400;
+		    margin-left: 0px;
+		    margin-top: 30px;
+		    margin: 18px 0;
+		}
+		.dine1
+		{
+			float: left;
+			display: inline-block;
+			height: 300px;
+			width: 433.3px;
+			padding: 10px;
+
+		}
+
+		.dine2
+		{
+			padding-left: 10px;
+			height: 300px;
+			width: 350px;
+			padding-top: 15px;
+			margin-left:30px;
+			margin-top: 10px;
+		}
+		.d821
+		{
+
+			float: left;
+			display: inline-block;
+			height: 240px;
+			width: 1300px;
+			background-color: red;
+		}
+		.g1
+		{
+			float:left;
+			display:inline-block;
+			padding-bottom:10px;
+			padding-left: 5px;
+			
+		}
+		.dine3
+		{
+			float: left;
+			display: inline-block;
+			height: 170px;
+			width: 300px;
+			margin-top: 30px;
+			margin-left: 20px;
+			
+		}
+		.code
+		{
+		text-align:center;
+		font-size: 20px;
+		font-weight: 500px;
+		color: grey;
+		}
+		.d822
+		{
+
+			float: left;
+			display: inline-block;
+			height: 150px;
+			width: 1300px;
+			background-color: purple;
+		}
+		.g2
+		{
+			float:left;
+			display:inline-block;
+			padding-bottom:10px;
+			padding-left: 5px;
+			
+		}
+		.dine4
+		{
+			float: left;
+			display: inline-block;
+			height: 170px;
+			width: 300px;
+			margin-top: 30px;
+			margin-left: 20px;
+			background-color: pink;
+			
+		}
+		.code1
+		{
+		text-align:center;
+		font-size: 20px;
+		font-weight: 500px;
+		color: grey;
+		}
+		main
+		{
+			height: 800px;
+			width: 1300px;
+			background-color:  #fff;
+		}
+		#main
+		{
+			height: 800px;
+			width: 1300px;
+		}
+		#d10
+		{
+			height: 300px;
+			width: 1300px;
+			background-color: #f3f2f0;
+
+		}
+
+		.icon
+		{
+			float: left;
+			display: inline-block;
+			height: 100px;
+			width: 400px;
+			
+			padding-left: 30px;
+			padding-top: 20px;
+			vertical-align: middle;
+		}
+		#family3
+		{
+			color: #f97157;
+			font-size: 24px;
+			font-weight: 500;
+			text-align:center;
+		}
+		#family4
+		{
+			    display: block;
+			    font-size: 12px;
+			    width: 83.33333333%;
+			    position: relative;
+			    min-height: 1px;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			    font-family: 'Roboto', helvetica, sans-serif;
+			    color: #444;
+			    font-weight: 500;
+
+		}
+		#d11
+		{
+			height: 500px;
+			width:1300px;
+			background-color: ;
+		}
+		#d12
+		{
+			height: 500px;
+			width: 630px;
+			background-color: red;
+			float: left;
+			display: inline-block;
+			padding-right: 15px;
+   			 padding-left: 15px;
+   			     
+		}
+		#family5
+		{
+			padding-top: 20px;
+			padding-left: 30px;
+			font-size: 26px;
+    color: #696969;
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-top: 40px;
+        margin-bottom: 20px;
+            display: block;
+		}
+		#family6
+		{
+			text-align: justify;
+			font-size: 16px;
+    		line-height: 22px;
+    		font-family: 'Roboto', helvetica, sans-serif;
+			color: #444;
+		    font-weight: 500;
+		    display: block;
+		    padding-top: 20px;
+		    padding-left: 30px;
+
+		}
+		.apps
+		{
+			padding-top: 10px;
+			height: 35px;
+			width: 125px;
+			padding-left: 30px;
+
+		}
+		#d13
+		{
+			height: 500px;
+			width: 630px;
+			background-color: red;
+			float: left;
+			display: inline-block;
+
+		}
+		#mobile
+		{
+			 width: 440px;
+    		 height: 500px;
+    		 padding-left: 70px;
+    		 margin-top: 12px;
+
+
+
+		}
+		#d14
+		{
+			height: 300px;
+			width: 1300px;
+			background-color: #f3f2f0;
+		}
+		#family7
+		{
+			font-size: 26px;
+		    color: #696969;
+		    width: 100%;
+		    text-align: left;
+		    font-weight: 400;
+		    margin-top: 22px;
+   
+		}
+
+		#family8
+		{
+			font-size: 26px;
+			color: #696969;
+			font-weight: 400px;
+			text-align: left;
+			margin-top: 22px;
+			padding-left: 50px;
+			padding-top: 30px;
+		}
+		.location 
+		{
+			float: left;
+			display: inline-block;
+			padding: 10px;
+			width: 20%;
+		}
+		 .location li
+		{	
+			display: inline-block;
+			font-size: 15px;
+		    padding: 3px 5px;
+		    letter-spacing: 0px;
+		    list-style-type: none;
+		    display: list-item;
+    		color: white;
+    		/* //color: #2997AB; */
+    		margin: 10px;
+			
+		}
+
+		  .location li >a
+		{
+		 text-decoration: none;
+          border-bottom: 1px dotted #737a84;
+		 font-weight: 600px;
+			color: #2997AB;
+			color:#23527;
+		   font-size: 17px;
+		   margin: 10px;
+		   padding-left: 70px;
+		   text-align: center;
+		}
+</style>
+		
+		
+</head>
+<body>
+<div id="container">
+	<header>
+		
+			<div id="d1"><h1 id="family">dineOut </h1></div>
+		
+		
+		<div id="d3"><img src="assets/dine.png" id="logo"></div>
+		<div id="d4" ><div class="dropdown">
+			<select>
+				<option>New DELHI</option>
+				<OPTION>Mumbai</OPTION>
+				<OPTION>Chennai</OPTION>
+				<OPTION>Hyderabad</OPTION>
+				<OPTION>Pune</OPTION>
+				<OPTION>Banglore</OPTION>
+				<OPTION>Ahemdabad</OPTION>
+		</select></div>
+		</div>
+		<div id="d5">
+			<div class="dropdown">
+  				<button class="dropbtn">SEARCH FOR RESTAURANT, AREA, LOCATION,ETC<img src="assets/download.png" id="search" ></button>
+  				<div class="dropdown-content">
+				    
+				    <a href="#"><b>	Suggested Search In Delhi</b></a>
+				    <a href="#">Restaurants in south Delhi
+				    </a>
+				    <a href="#">Restaurant in Central Delhi</a>
+				    <a href="#">Happy hours in Delhi</a>
+				    <a href="#">Happy hours in Central Delhi</a>
+				    <a href="#">Happy hours in south Delhi</a>
+  				</div>
+			</div>
+		</div>
+		<div id="demo">
+			<div id="lgno">
+				<b>Log in | +91 9212340420</b>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div id="d7">
+			<img src="assets/dine-brissago.jpg" id="logo2">
+			<p id="text"><b> RESERVE TABLE FOR FREE !</b></p>
+				<p id="text2"><b>Find the best restaurant deals, discounts and offers</b><br><br>
+				<input type="submits" value="Reserve now" id="button"></p>
+		</div>
+	</nav>
+	<section>
+		<div id="d8">
+			<div id="d81">
+				<h1 id="family2"> Dineout Recommended Restaurants in Delhi</h1>
+					<div class="dine1">
+						<img src="assets/top-trending-restaurants.jpg" class="dine2">
+					</div>
+					<div class="dine1">
+						<img src="assets/rsz_1carlson-banner-desktopsite.jpg" class="dine2">
+					</div>
+					<div class="dine1">
+						<img src="assets/website-banner-2020.jpg" class="dine2">
+					</div>
+			</div><hr>
+				<div id="d82">
+					<h1 id="family2">Dineout Collections</h1>
+						<div class="d821">
+							<div class="g1">
+								<figure>
+									<img src="assets/luxurydinning.jpg" class="dine3">
+									<figcaption class="code">Luxury Dining<br><i>(317)</i>
+									</figcaption>
+								</figure>	
+							</div>
+							<div class="g1">
+								<figure>
+									<img src="assets/chinese.jpg"  class="dine3">
+									<figcaption class="code">Chinease <br>(317)
+									</figcaption>
+								</figure>
+							</div>
+							<div class="g1">
+								<figure>
+									<img src="assets/italian.jpg" class="dine3">
+									<figcaption class="code"> Italian<br><i>(158)</i>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="g1">
+								<figure>
+									<img src="assets/dosa.jpg"  class="dine3">
+									<figcaption class="code">South Indian <br><i>(138)</i>
+								 	</figcaption>
+								 </figure>
+							</div>
+					    </div>
+					<div class="d822">
+						<div class="g2">
+							<figure>
+								<img src="assets/thumb_600.jpg" class="dine4">
+								<figcaption class="code1">Pure veg<br><i>(571)</i>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="g2">
+								<figure>
+									<img src="assets/romantic.jpg"  class="dine4">
+									<figcaption class="code1"> Romantic<br>(40)
+									</figcaption>
+								</figure>
+						</div>
+					<div class="g2">
+							<figure>
+								<img src="assets/happyhours.jpg" class="dine4">
+								<figcaption class="code1"><br>Happy Hours<i>(144)</i>
+								</figcaption>
+							</figure>
+					</div>
+					<div class="g2">
+							<figure>
+							<img src="assets/fine dinning.jpg"  class="dine4">
+							<figcaption class="code1"> <br>Fine Dining<i>(240)</i>
+					 		</figcaption>
+					        </figure>
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<main>
+		<div id="main">
+			<div id="d10">
+				<div class="icon">
+					<img src="assets/reserve_ico.png">
+					<h1 id="family3"><b>Reserve your Table</b></h1>
+					<p id="family4">Select from the list of our partner restaurants with their offers, and reserve your table using dineout!</p>
+				</div>
+				<div class="icon">
+					<img src="assets/discover.png">
+					<h1 id="family3"><b>Discover New Places to Dine</b></h1>
+					<p id="family4">Interesting places to eat, with great service and amazing food, is what you find here. Begin your journey of dining discovery with dineout!</p>
+				</div>
+				<div class="icon">
+					<img src="assets/earn.png">
+					<h1 id="family3"><b>Save and Earn</b></h1>
+					<p id="family4">Get cash backs, rewards, discounts and vouchers Here’s to savings and happiness with dineout!</p>
+				</div>
+			</div>
+			<div id="d11">
+				<div id="d12">
+					<h3 id="family5">Welcome to Dineout</h3>
+					<p id="family6">Gone are the days when you waited outside a restaurant, paid exorbitantly for a meal and missed out on the best new restaurants in town.</p>
+					<p id="family6">
+Currently seating 400,000+ happy diners a month across 3500 restaurants in 8 cities per month, we are India’s largest table reservation service. We have helped over 5 million diners RESERVE tables, SAVE money and time, and DISCOVER new placesess to eat!</p>
+				<p id="family6">Join them by Downloading the Dineout App now and reserving your table at the best restaurants in town.</p>
+				<img src="assets/appstore_icon.png" class="apps">
+				<img src="assets/googleplay_icon.png" class="apps">
+				</div>
+				<div id="d13">
+					<img src="assets/mobile_screen_new.png" id="mobile">
+				</div>
+			</div>
+			<div id="d14">
+				<h3 id="family8">Restaurants in and around Delhi</h3>
+					<div class="location">
+						<li><a href="#">khan market</a></li>
+						<li><a href="#">cannaught place</a></li>
+						<li><a href="#">vaishali</a></li>
+						<li><a href="#">kamla nagar</a></li>
+						<li><a href="#">new friends colony</a></li>
+					</div>
+					<div class="location">
+						<li><a href="#">Indra puram </a></li>
+						<li><a href="#">Dwarka</a></li>
+						<li><a href="#"> Mg road</a></li>
+						<li><a href="#">Saket</a></li>
+						<li><a href="#"> greater noida</a></li>
+					</div>
+					<div class="location">
+					<li><a href="#">Malviye nagar</a></li>
+						<li><a href="#">karol bagh</a></li>
+						<li><a href="#">defence colony</a></li>
+						<li><a href="#">Rohini</a></li>
+						<li><a href="#">vasant kunj</a></li>
+					</div>
+					<div class="location">
+					<li><a href="#">Pitam pura</a></li>
+						<li><a href="#">Punjabi bagh</a></li>
+						<li><a href="#">Nehru place</a></li>
+						<li><a href="#">Janakpuri</a></li>
+						<li><a href="#">Hauz khas</a></li>
+					
+				</div>
+		</div>
+		
+	</main>
+	
+	
+</div>
+</body>
+</html>
