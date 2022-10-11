@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js" ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <title>My-meet | Socket.io</title>
+</head>
+
+<body>
+    
+    <!-- <h1>hello zoom</h1> -->
+    <div id="main">
+        <div class="main_left">
+            <div class="header">
+                <h2>My-meet</h2>
+            </div>
+            <div class="main_videos">
+                <div id="videoGrid"></div>
+            </div>
+            <div class="main_controls">
+                <div class="main_controls_block">
+                    <div onclick="muteUnmute()" class="main_controls_button main_mute_button">
+                        <i class="fas fa-microphone"></i>
+                        <span>Mute</span>
+                    </div>
+
+                    <div onclick="playStop()" class="main_controls_button main_video_button">
+                        <i class="fas fa-video"></i>
+                        <span>Stop Video</span>
+                    </div>
+                </div>
+                <div class="main_controls_block">
+                    <div class="main_controls_button">
+                       <i class="fas fa-shield-alt"></i>
+                       <span>Security</span>
+                    </div>
+                    <div class="main_controls_button">
+                       <i class="fas fa-user-friends"></i>
+                       <span>Participants</span>
+                    </div>
+                    <div class="main_controls_button">
+                       <i class="fas fa-comment-alt"></i>
+                       <span>Chat</span>
+                    </div>
+                 </div>
+                 <div class="main_controls_block">
+                    <div class="main_controls_button">
+                       <span class="leave_meeting">Leave Meeting</span>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="main_right">
+            <div class="chat_header">
+                <h4>My-meet Chat</h4>
+            </div>
+            <div class="main_chat_window">
+                <ul class="messages">
+
+                </ul>
+            </div>
+            <div class="main_message_container">
+                <input id="chat_message" class="chat_message" type="text" placeholder="Type message here...">
+            </div>
+        </div>
+    </div>
+    
+</body>
+<!-- <script src="/script.js"></> -->
+<script src = "/socket.io/socket.io.js" defer ></script>
+<!-- <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js" ></script> -->
+
+<script>
+    const ROOM_ID = "<%= roomId %>";
+</script>
+<script src="script.js" defer></script>
+
+</html>
