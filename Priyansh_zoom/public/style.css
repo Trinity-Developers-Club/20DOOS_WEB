@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+.main_left{
+    flex: 0.8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+}
+
+.main_right{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+    border-left: 2px solid black;
+    justify-content: space-between;
+}
+
+.main_videos{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#videoGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+video{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border: 2px solid rgb(67, 67, 68);
+    margin: 10px;
+}
+
+.main_controls{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color: black;
+}
+
+.main_controls_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main_controls_button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.main_controls_block{
+    display: flex;
+}
+
+.leave_meeting{
+    color: red;
+}
+
+.chat_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 30px;
+}
+
+.main_chat_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.chat_message{
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 3px;
+    height: 50px;
+    color: antiquewhite;
+}
+
+.chat_message:focus{
+    border: none;
+}
+
+.message{
+    color: antiquewhite;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    list-style: none;
+    padding: 5px 15px;
+
+}
+
+.unmute, .stop{
+    color: red;
+}
