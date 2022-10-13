@@ -1,6 +1,9 @@
 # Movie App: CineFlix
 
-made with vue + vite + tailwind css
+Frontend for movie app made with vue + vite + tailwind css
+
+### Preview live
+https://cine-flix.vercel.app/
 
 ### Compile and Hot-Reload for Development
 
