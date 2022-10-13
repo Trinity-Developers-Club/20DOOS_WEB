@@ -1,0 +1,18 @@
+.container{
+    text-align: center;
+  }
+  .container h1{
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: 400;
+  }
+  .container h2{
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: 400;
+  }
+  .container p{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 200;
+  }
