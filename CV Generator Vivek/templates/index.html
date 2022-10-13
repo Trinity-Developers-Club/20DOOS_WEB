@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>detail</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  </head>
+  <body>
+    <div class="container">
+    <h1>{{name}}</h1>
+    <hr>
+    <p> Email: {{email}} </p>
+    <p>Phone: {{phone}}</p>
+    <hr>
+    <h2>Address Detail</h2>
+    <p>Country: {{country}}</p>
+    <p>State: {{state}}</p>
+    <p>City: {{city}}</p>
+    <p>Parmanent Address: {{address}}</p>
+    <hr>
+    <h2>Educational Details</h2>
+    <hr>
+    <p>Education: {{lastdegree}}</p>
+    <p>Degree Name: {{degreename}}</p> <p>From {{dateofjoining}} to {{dateofEnding}}</p>
+    <p>Institute: {{institute}}</p>
+    <p>Favorite Sport: {{favsport}}</p>
+    <p>Area of Interest: {{interest}}</p>
+    <h2>A Short Description about myself</h2>
+    <p>{{shortBio}}</p>
+    </div>
+  </body>
+</html>
