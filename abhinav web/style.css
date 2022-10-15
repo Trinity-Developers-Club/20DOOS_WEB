@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh; 
+}
+#container{
+    color: darkorchid;
+}
+.digit{
+    font-size: 150px;
+    font-weight: bold;
+}
+.txt{
+font-size: 40px;
+font-weight: bold;
+}
+.btn{
+    padding: 7px 25px;
+    font-size: 16px;
+    margin: 0px 10px;
+    color:darkslategrey;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#start{
+    background-color: lightgreen;
+   
+}
+#start:hover{
+    background-color: rgb(0, 255, 0) ;
+}
+#stop{
+    
+    background-color: lightcoral;
+}
+#stop:hover{
+    background-color: red;
+}
+#reset{
+    background-color: lightyellow;
+}
+#reset:hover{ 
+    background-color: rgb(130, 100, 23);
+}
