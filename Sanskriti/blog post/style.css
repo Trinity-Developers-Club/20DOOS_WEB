@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+h1 {
+    color: rgb(16, 194, 16);
+    font-size: 40px;
+}
+
+h2 {
+    color: green;
+    font-size: 25px;
+    ;
+}
+p {
+    font-size: 18px;
+    text-align: justify;
+}
