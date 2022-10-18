@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel='icon' href='{{url_for('static',filename='tabIcon.png')}}'/>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+      body{
+          margin: 0px;
+          padding: 0px;
+          background-color: black;
+          color: white;
+      }
+      .mid{
+          display: block;
+          width: 60%;
+          margin: 2% auto;
+      }
+      .navbar{
+          display: block;
+      }
+      .navbar li{
+          display: inline-block;
+          font-size: 20px;
+          padding: 5%;
+      }
+      .navbar li a{
+          color: #FFF;
+          text-decoration: none;
+      }
+      .navbar li a:hover{
+        color: #777;
+        border-bottom: 2px solid #777;
+      }
+      .mid .navbar .active {
+        border-bottom: 2px solid #777;
+        color: #777;
+      }
+      .mid .navbar .active:hover {
+        border-bottom: 2px solid #777;
+        color: #555;
+      }
+      h1{
+        display:inline;
+      }
+      .Details{
+        position:absolute;
+        left:25%;
+        top: 25%;
+      }
+    </style>
+    <script type="text/javascript">
+        function extractData(){
+            var strr=document.getElementById('Name').value;
+        }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label class="switch">
+        <input type="checkbox" onclick="lightMode()"/>
+        <span class="slider" ></span>
+        <span class="themeText">Switch Theme</span>
+      </label>
+    </div>
+    <header>
+      <h1 class="logo"><a href="/urlShortener">URL Shortener</a></h1>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="/history">History</a></li>
+            <li><a href="/profile" class="active">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="/logout"><button class="button">Logout</button></a>
+    </header>
+    <form class="login-box"  action="/editProfile" method="post">
+      <h1>Edit Profile</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Name" name="name">
+      </div>
+      <br>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" name="username">
+      </div>
+      <br>
+
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Email" name="email">
+      </div>
+      <br>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Old Password" name="oldPass">
+      </div>
+      <br>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="New Password" name="newPass">
+      </div>
+      <br>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Confirm New Password" name="repass">
+      </div>
+      <br>
+
+      <input type="submit" class="btn" value="Edit Profile">
+      <br>
+
+      <!-- <h3>Already registered? <a href="/">Login now</a></h3> -->
+      <!-- <button onclick="window.location = 'http://localhost:5000/login'">Login now</button> -->
+    </form>
+  </body>
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+    function lightMode(){
+      var light = document.body;
+      light.classList.toggle("light-mode");
+    }
+  
+  </script>
+</html>

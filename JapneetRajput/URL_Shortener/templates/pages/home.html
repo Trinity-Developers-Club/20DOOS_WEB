@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel='icon' href='{{url_for('static',filename='tabIcon.png')}}'/>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body class="login-box">
+    <div>
+      <label class="switch">
+        <input type="checkbox" onclick="lightMode()"/>
+        <span class="slider" ></span>
+        <span class="themeText">Switch Theme</span>
+      </label>
+    </div>
+    <h1>Registered Successfully!</h1>
+  </body>
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+    function lightMode(){
+      var light = document.body;
+      light.classList.toggle("light-mode");
+    }
+  
+  </script>
+</html>
