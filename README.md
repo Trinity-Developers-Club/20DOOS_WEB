@@ -1,130 +1,70 @@
-![20 DAYS OF OPEN SOURCE](https://user-images.githubusercontent.com/83370198/193411423-03f10a52-a199-4f5d-924b-34b399b2951c.gif)
-</p>
-<h1 align="center"> 20 Days Of Open Source </h1>
+# Getting Started with Create React App
 
-<h3 align="center">
-    <a href="#">
-        20 DAYS OF Open Source
-    </a>
-</h3>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Event details :
+## Available Scripts
 
-- 20 Days of Open Source is a **20 Days long** event. It is organized by Trinity Cyber Forum & GFG IPEC Student Chapter.
-- Every commit & pull request from a registered github profile will be counted as a valid contribution.
-- You have to make at least 1 contribution in 20 days.
-- Try to make good contributions instead of number of contributions.
-- Whoever makes most valid and good contributions will be declared as the winner.
+In the project directory, you can run:
 
-For your PR to count it must be:
+### `npm start`
 
-- Submitted in a public repo, AND Merged, OR Approved by a maintainer.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<h3 align="center"> Whether it’s your first or fiftieth pull request, there’s always more to learn! We’ve put together a few resources that can help you create quality pull requests, keep your repositories pristine, and build on your open source knowledge. </h3>
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Rules To Contribute To This Repo
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- You can contribute any website or webapp (Static/Dynamic) in any tecnology.
-- While adding any content it should be inside its appropiate directory.
-- If there is any problem with any website create an issue!
+### `npm run eject`
 
-## How you can contribute to this repo
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- This repo is blank at initial stage.
-- You have to **add a folder** of your name.
-- You have to **add your project** in your folder with proper `README.md` in that folder.
-- You can **update existing site** with its better version and with new feature.
-- Participants can even **add any technology** in their site if they want.
-- **Solve issues** raised by other people or yourself.
-- **Add link** of your site in your `README.md` file.
-## Steps For Contribution
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-    1. Fork this repo
-    2. Star this repo
-    3. Add your folder
-    4. Commit the code
-    5. Make pull request
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### FEATURES
+## Learn More
 
-1. Beginner-friendly.
-2. Targeted for Web Developers.
-3. Would also help participants who are familiar with web development.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-<br>
+### Code Splitting
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
-### Connect with us
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Trinity Cyber Forum
+### Making a Progressive Web App
 
-<p>
-<a href="https://github.com/ipectrinity">
-  <img align="left" alt="" width="3%" style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg" />
-</a>  
-    
-<a href="https://www.instagram.com/ipectrinity/">
-  <img align="left" alt="" width="3%" style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
-</a>
-    
-<a href="https://www.facebook.com/ipectrinity">
-  <img align="left" alt="" width="3%"  style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/facebook.svg" />
-</a>&ensp;&ensp;&ensp;
-</p>
-<br>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## IPEC GFG Student Chapter
+### Advanced Configuration
 
-<p>
-<a href="ipecgfg@gmail.com">
-  <img align="left" alt="Sunny's LinkdeIn" width="3%" style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/gmail.svg" />
-</a>  
-    
-<a href="https://instagram.com/geeksforgeeks_ipec?igshid=YmMyMTA2M2Y=">
-  <img align="left" alt="Sunny's Instagram" width="3%" style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
-</a>
-    
-<a href="https://www.facebook.com/GFG-Student-Chapter-IPEC-100934188875529/">
-  <img align="left" alt="Sunny's Twitter" width="3%"  style="margin:10px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/facebook.svg" />
-</a>&ensp;&ensp;&ensp;
-</p>
-<br>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
----
+### Deployment
 
-```javascript
-if (isAwesome) {
-  // thanks in advance :p
-  starThisRepository();
-}
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
----
+### `npm run build` fails to minify
 
-```javascript
-  _____ _                 _     __   __
- |_   _| |__   __ _ _ __ | | __ \ \ / /__  _   _
-   | | | '_ \ / _` | '_ \| |/ /  \ V / _ \| | | |
-   | | | | | | (_| | | | |   <    | | (_) | |_| |
-   |_| |_| |_|\__,_|_| |_|_|\_\   |_|\___/ \__,_|
-```
----
-
-
- This repository Created by [@Dhruv-IGI](https://github.com/Dhruv-IGI) for event `20 Days of Open Source` by **TCF** & **GFG**. 
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
