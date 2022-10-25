@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel='icon' href='{{url_for('static',filename='tabIcon.png')}}'/>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+      h1{
+        display:inline;
+      }
+      .Details{
+        position:absolute;
+        left:20%;
+        top: 25%;
+      }
+      .btn{
+        width: 80%;
+        background: none;
+        border: 2px solid #FFFFFF;
+        color: white;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 12px 0;
+      } 
+      .Details h1{
+        font-family:"Lilita one";
+        font-weight:300;
+        color:white;
+        font-size:200%;
+      }
+      .Details .head{
+        font-size:350%;
+      }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <div>
+      <label class="switch">
+        <input type="checkbox" onclick="darkMode()"/>
+        <span class="slider" ></span>
+        <span class="themeText">Switch Theme</span>
+      </label>
+    </div>
+    <header>
+      <h1 class="logo"><a href="/urlShortener">URL Shortener</a></h1>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="/history">History</a></li>
+            <li><a href="/profile" class="active">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="/logout"><button class="button">Logout</button></a>
+    </header>
+    <div class="Details">
+      <h1 class="head">Profile</h1><br><br><br>
+      {% for i in range(0,4) %}
+          {% if r[1]==username %}
+            {% if i==0 %}
+              <h1>Name: {{r[i]}}</h1><br>
+            {% endif %}
+            {% if i==1 %}
+              <h1>Username: {{r[i]}}</h1><br>
+            {% endif %}
+            {% if i==2 %}
+              <h1>Email: {{r[i]}}</h1><br>
+            {% endif %}
+          {% endif %}
+        <br>
+      {% endfor %}
+      <button class="btn"><a href="/beforeEditProfile">Edit Profile</a></button>
+    </div>
+  </body>
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+    function lightMode(){
+      var light = document.body;
+      light.classList.toggle("light-mode");
+    }
+  
+  </script>
+</html>
