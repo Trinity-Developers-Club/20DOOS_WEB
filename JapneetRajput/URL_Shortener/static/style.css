@@ -1,0 +1,192 @@
+ @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+}
+li,a,button{
+  font-family: 'Lilita one',cursive;
+  font-weight: 500;
+  font-size: 110%;
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 5%;
+}
+#activee a{
+  color: #777;
+  text-decoration: underline;
+}
+.logo{
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 220%;
+}
+.logo:hover{
+  text-decoration: underline;
+  color: #aaa;
+  opacity: 0.5;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 80px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover,.active{
+  color: #777;
+  text-decoration: underline;
+}
+.nav_links li .active:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.button{
+  margin-left: 80px;
+  padding: 5% 10%;
+  background-color: #333;
+  border: none;
+  border-radius: 4%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;  
+}
+
+.button:hover{
+  background-color: #666;
+  color: black;
+}
+/* body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+  background-size: cover;
+}*/
+.login-box{
+  width: 100vh;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+}
+.login-box h1{
+  float:left;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  padding: 10px 0;
+}
+.textbox{
+  width: 80%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+.textbox i{
+  width: 5%;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  width: 50%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 40%;
+  background: none;
+  border: 2px solid #b9b9b9;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+} 
+
+/* Theme Switch */
+.switch input{
+	display: none;
+}
+
+.switch{
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	width: 60px;
+	position: relative;
+}
+
+.slider{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border: 4px solid transparent;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 2px #777, 0px 0px 4px #777;
+	transition: 0.2s;
+	background: #777;
+}
+
+.slider::before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-radius: 30px;
+	transform: translateX(-30px);
+	transition: 0.2s;
+}
+
+input:checked + .slider:before{
+	transform: translateX(30px);
+	background: #777;
+}
+
+input:checked + .slider{
+	box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px white;
+	background: rgb(240, 240, 240);
+}
+
+.themeText{
+  position: absolute;
+  top: 29px;
+  background-color: transparent;
+  font-size: 13px;
+  left: 5px;
+  width: 80px;
+  font-family: 'Lilita one',cursive;
+}
+
+.dark-mode {
+  background-color: black !important; 
+  color: white !important;
+}
+
+.light-mode{
+  background-color: white !important;
+  color: black !important;
+}
