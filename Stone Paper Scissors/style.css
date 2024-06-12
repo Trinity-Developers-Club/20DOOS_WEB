@@ -1,0 +1,45 @@
+*
+{
+    color:white;
+}
+.container
+{
+    display:flex;
+    justify-content: space-evenly;
+    margin:30px;
+}
+.btn
+{
+    height:250px;
+    width:250px;
+    border-radius:45px;
+}
+.bt
+{
+    background-color: red;
+    height:70px;
+    width:200px;
+    font-size: larger;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:80px;
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: black;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.center
+{
+    text-align: center;
+}
+.display
+{
+     display:inline-block;
+     width:48%;
+}
